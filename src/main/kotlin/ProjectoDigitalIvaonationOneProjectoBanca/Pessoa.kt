@@ -2,8 +2,11 @@ package ProjectoDigitalIvaonationOneProjectoBanca
 
 class Pessoa {
 
-    val nome: String = "Eliseu Domingos"
-    val cpf:String = "12.45.78.26"
+    var nome: String = "Eliseu Domingos"
+    var cpf:String = "12.45.78.26"
+        private set // está linha impede com que fora dos escopo, as variaveis nome e cpf, ficassem inalterados...
+
+
 
 }
 fun main(){
